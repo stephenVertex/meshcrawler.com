@@ -3,9 +3,10 @@ frontend:
   phases:
     build:
       commands:
-        - echo "Static site - no build needed"
+        - mkdir -p build
+        - cp index.html build/
   artifacts:
-    baseDirectory: .
+    baseDirectory: build
     files:
       - '**/*'
   cache:
