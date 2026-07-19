@@ -4,7 +4,7 @@ frontend:
     build:
       commands:
         - mkdir -p build
-        - cp index.html build/
+        - cp index.html people.html styles.css build/
   artifacts:
     baseDirectory: build
     files:
