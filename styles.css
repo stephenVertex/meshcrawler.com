@@ -38,11 +38,14 @@ a:focus-visible { outline: 2px solid var(--cyan); outline-offset: 5px; }
 .site-header { background: rgba(8, 10, 21, 0.86); border-bottom: 1px solid var(--line); position: relative; z-index: 10; backdrop-filter: blur(18px); }
 .header-inner { align-items: center; display: flex; height: 82px; justify-content: space-between; }
 .brand { align-items: center; display: inline-flex; gap: 11px; }
-.brand-mark { display: flex; gap: 3px; height: 24px; width: 25px; }
-.brand-mark span { background: linear-gradient(180deg, var(--cyan), var(--violet)); border-radius: 1px; display: block; width: 6px; }
-.brand-mark span:nth-child(1) { height: 15px; margin-top: 9px; opacity: .7; }
-.brand-mark span:nth-child(2) { height: 22px; margin-top: 2px; }
-.brand-mark span:nth-child(3) { height: 18px; margin-top: 6px; opacity: .85; }
+.brand-mark { display: block; flex: 0 0 auto; height: 24px; overflow: visible; width: 29px; }
+.brand-edge { fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.7; }
+.edge-vertical { stroke: var(--cyan); }
+.edge-diagonal { stroke: var(--violet-bright); }
+.brand-node { fill: var(--ink); stroke-width: 1.5; }
+.node-cyan { stroke: var(--cyan); }
+.node-violet { stroke: var(--violet-bright); }
+.node-pink { fill: var(--pink); stroke: var(--pink); }
 .brand-name { font-size: 17px; font-weight: 800; letter-spacing: -.06em; }
 .brand-name span { color: var(--violet-bright); font-weight: 500; }
 .site-nav { display: flex; gap: 34px; margin-left: 10%; }
