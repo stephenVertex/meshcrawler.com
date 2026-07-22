@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MeshCrawler One-Page Brief Template</title>
+  <style>
+    @font-face { font-family: "Manrope"; src: url("assets/fonts/Manrope-Variable.ttf") format("truetype"); font-weight: 200 800; }
+    @font-face { font-family: "DM Mono"; src: url("assets/fonts/DMMono-Regular.ttf") format("truetype"); font-weight: 400; }
+    @font-face { font-family: "DM Mono"; src: url("assets/fonts/DMMono-Medium.ttf") format("truetype"); font-weight: 500; }
+
+    :root {
+      --ink: #080a15;
+      --ink-soft: #10142a;
+      --paper: #f7f6f2;
+      --white: #ffffff;
+      --muted: #65697c;
+      --muted-dark: #a3a6b9;
+      --violet: #7c5cff;
+      --violet-bright: #a890ff;
+      --cyan: #4de2d2;
+      --pink: #ff5eaa;
+      --line: rgba(8,10,21,.14);
+    }
+
+    * { box-sizing: border-box; }
+    @page { size: Letter; margin: 0; }
+
+    html, body { margin: 0; padding: 0; background: #c9c9ca; color: var(--ink); font-family: "Manrope", sans-serif; }
+
+    .sheet {
+      position: relative;
+      width: 8.5in;
+      height: 11in;
+      margin: 0 auto;
+      overflow: hidden;
+      background: var(--paper);
+    }
+
+    .hero {
+      position: relative;
+      height: 4.12in;
+      padding: 0.55in 0.68in 0.48in;
+      overflow: hidden;
+      background: radial-gradient(circle at 82% 25%, rgba(124,92,255,.42), transparent 27%), linear-gradient(115deg, #171b47, var(--ink) 72%);
+      color: var(--white);
+    }
+
+    .grid {
+      position: absolute;
+      inset: 0;
+      background-image: linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+      background-size: .58in .58in;
+    }
+
+    .orb { position: absolute; width: 4in; height: 4in; right: -1.7in; top: -1.7in; border: 1px solid rgba(77,226,210,.2); border-radius: 50%; }
+
+    .topline, .hero-copy, .hero-meta { position: relative; z-index: 2; }
+    .topline { display: flex; align-items: center; justify-content: space-between; }
+    .brand { display: flex; align-items: center; gap: 9px; }
+    .brand img { width: 29px; height: 24px; }
+    .brand-name { color: white; font-size: 13pt; font-weight: 800; letter-spacing: -.06em; }
+    .brand-name span { color: var(--violet-bright); font-weight: 500; }
+    .doc-type { color: var(--muted-dark); font-family: "DM Mono", monospace; font-size: 6.5pt; letter-spacing: .11em; text-transform: uppercase; }
+
+    .hero-copy { margin-top: .42in; }
+    .eyebrow { display: flex; align-items: center; gap: 8px; margin: 0 0 .14in; color: var(--cyan); font-family: "DM Mono", monospace; font-size: 6.7pt; font-weight: 500; letter-spacing: .13em; text-transform: uppercase; }
+    .eyebrow::before { width: 5px; height: 5px; border-radius: 50%; background: currentColor; box-shadow: 0 0 9px currentColor; content: ""; }
+    h1 { max-width: 6.2in; margin: 0 0 .17in; font-size: 35pt; font-weight: 700; letter-spacing: -.065em; line-height: 1.02; }
+    h1 em { color: var(--violet-bright); font-style: normal; }
+    .intro { max-width: 5.65in; margin: 0; color: var(--muted-dark); font-size: 10.5pt; line-height: 1.58; }
+    .placeholder { color: var(--cyan); font-family: "DM Mono", monospace; }
+
+    .hero-meta { display: flex; margin-top: .27in; padding-top: .13in; border-top: 1px solid rgba(255,255,255,.14); }
+    .hero-meta > div { width: 33.333%; }
+    .meta-label { display: block; margin-bottom: .035in; color: var(--muted-dark); font-family: "DM Mono", monospace; font-size: 5.8pt; letter-spacing: .1em; text-transform: uppercase; }
+    .meta-value { color: white; font-size: 8pt; font-weight: 650; }
+
+    .body { height: 6.88in; padding: .38in .68in .53in; }
+    .body-top { display: flex; gap: .34in; }
+    .body-top > div:first-child { width: 55%; }
+    .body-top > div:last-child { width: 45%; }
+    h2 { margin: 0 0 .12in; font-size: 17pt; font-weight: 700; letter-spacing: -.055em; line-height: 1.05; }
+    h3 { margin: 0 0 .05in; font-size: 9pt; font-weight: 800; letter-spacing: -.025em; }
+    p { margin-top: 0; }
+    .body-copy { margin-bottom: .11in; color: var(--muted); font-size: 7.8pt; line-height: 1.62; }
+    .body .placeholder { color: var(--violet); }
+
+    .signal-list { margin: 0; padding: 0; border-top: 1px solid var(--line); list-style: none; }
+    .signal-list li { display: flex; gap: .12in; padding: .1in 0; border-bottom: 1px solid var(--line); color: var(--muted); font-size: 7.3pt; line-height: 1.45; }
+    .signal-list span { color: var(--violet); font-family: "DM Mono", monospace; font-size: 6pt; }
+
+    .outcomes { display: flex; gap: .1in; margin-top: .25in; }
+    .outcome { width: 33.333%; min-height: 1.17in; padding: .16in; background: var(--ink-soft); color: white; }
+    .outcome:nth-child(2) { background: var(--violet); }
+    .outcome:nth-child(3) { background: white; color: var(--ink); border: 1px solid var(--line); }
+    .outcome-index { display: block; margin-bottom: .11in; color: var(--cyan); font-family: "DM Mono", monospace; font-size: 5.8pt; }
+    .outcome:nth-child(2) .outcome-index { color: white; }
+    .outcome h3 { margin-bottom: .04in; font-size: 9.5pt; }
+    .outcome p { margin: 0; color: var(--muted-dark); font-size: 6.4pt; line-height: 1.45; }
+    .outcome:nth-child(2) p { color: rgba(255,255,255,.72); }
+    .outcome:nth-child(3) p { color: var(--muted); }
+    .outcome:nth-child(2) .placeholder { color: var(--white); }
+
+    .engagement {
+      display: flex;
+      align-items: stretch;
+      margin-top: .25in;
+      border-top: 1px solid var(--ink);
+      border-bottom: 1px solid var(--ink);
+    }
+    .engagement-title { width: 1.55in; padding: .17in .16in .14in 0; }
+    .engagement-title h2 { margin: 0; font-size: 14pt; }
+    .engagement-item { flex: 1; padding: .16in; border-left: 1px solid var(--line); }
+    .engagement-item strong { display: block; margin-bottom: .035in; font-size: 8pt; }
+    .engagement-item p { margin: 0; color: var(--muted); font-size: 6.6pt; line-height: 1.45; }
+
+    .footer {
+      position: absolute;
+      left: .68in;
+      right: .68in;
+      bottom: .28in;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: .11in;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-family: "DM Mono", monospace;
+      font-size: 6pt;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+    }
+    .footer strong { color: var(--violet); font-weight: 500; }
+
+    @media screen { body { padding: 28px 0; } .sheet { box-shadow: 0 14px 40px rgba(0,0,0,.25); } }
+    @media print { body { background: transparent; } .sheet { box-shadow: none; } }
+  </style>
+</head>
+<body>
+  <main class="sheet">
+    <section class="hero">
+      <div class="grid"></div><div class="orb"></div>
+      <div class="topline">
+        <div class="brand"><img src="assets/meshcrawler-logo.svg" alt=""><div class="brand-name">mesh<span>crawler</span></div></div>
+        <div class="doc-type">Executive brief / <span class="placeholder">[MC-YYYY-###]</span></div>
+      </div>
+      <div class="hero-copy">
+        <p class="eyebrow">Proposal snapshot / <span class="placeholder">[Client Name]</span></p>
+        <h1><span class="placeholder">[Project or offering]</span><br><em>made clear.</em></h1>
+        <p class="intro"><span class="placeholder">[One compelling sentence that names the opportunity, proposed response, and intended business value.]</span></p>
+      </div>
+      <div class="hero-meta">
+        <div><span class="meta-label">Prepared for</span><span class="meta-value placeholder">[Client Name]</span></div>
+        <div><span class="meta-label">Prepared by</span><span class="meta-value">Stephen Barr</span></div>
+        <div><span class="meta-label">Date</span><span class="meta-value placeholder">[Month DD, YYYY]</span></div>
+      </div>
+    </section>
+
+    <section class="body">
+      <div class="body-top">
+        <div>
+          <h2>The opportunity</h2>
+          <p class="body-copy"><span class="placeholder">[Use 80–120 words to explain the current situation, why it matters now, and what becomes possible when it is solved.]</span></p>
+          <p class="body-copy"><span class="placeholder">[Add a second short paragraph with context, evidence, or the strategic constraint this engagement addresses.]</span></p>
+        </div>
+        <div>
+          <h2>What we will do</h2>
+          <ul class="signal-list">
+            <li><span>01</span><div class="placeholder">[Primary workstream or deliverable]</div></li>
+            <li><span>02</span><div class="placeholder">[Primary workstream or deliverable]</div></li>
+            <li><span>03</span><div class="placeholder">[Primary workstream or deliverable]</div></li>
+            <li><span>04</span><div class="placeholder">[Enablement, governance, or handoff]</div></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="outcomes">
+        <article class="outcome"><span class="outcome-index">OUTCOME / 01</span><h3 class="placeholder">[Business result]</h3><p>Describe the measurable value or decision this work enables.</p></article>
+        <article class="outcome"><span class="outcome-index">OUTCOME / 02</span><h3 class="placeholder">[Team result]</h3><p>Describe the adoption, speed, or operating leverage created.</p></article>
+        <article class="outcome"><span class="outcome-index">OUTCOME / 03</span><h3 class="placeholder">[System result]</h3><p>Describe the durable capability that remains after handoff.</p></article>
+      </div>
+
+      <div class="engagement">
+        <div class="engagement-title"><span class="meta-label">At a glance</span><h2>Engagement</h2></div>
+        <div class="engagement-item"><span class="meta-label">Timeline</span><strong class="placeholder">[X weeks]</strong><p class="placeholder">[Start window]</p></div>
+        <div class="engagement-item"><span class="meta-label">Investment</span><strong class="placeholder">[$XX,XXX]</strong><p>Professional services</p></div>
+        <div class="engagement-item"><span class="meta-label">Model</span><strong class="placeholder">[Fixed / T&amp;M]</strong><p class="placeholder">[Payment terms]</p></div>
+      </div>
+    </section>
+
+    <footer class="footer"><span>MeshCrawler LLC · 100 N Howard ST · Suite R · Spokane, WA 99201</span><strong>hello@meshcrawler.com</strong></footer>
+  </main>
+</body>
+</html>
