@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="260" viewBox="0 0 32 26" role="img" aria-labelledby="title desc">
+  <title id="title">MeshCrawler graph M mark</title>
+  <desc id="desc">A connected M-shaped network mark in cyan, violet, and pink.</desc>
+  <path d="M4 22V5 M16 17V8 M28 5V22" fill="none" stroke="#4DE2D2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"/>
+  <path d="M4 5L16 17L28 5" fill="none" stroke="#A890FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"/>
+  <circle cx="4" cy="22" r="2" fill="#080A15" stroke="#4DE2D2" stroke-width="1.5"/>
+  <circle cx="4" cy="5" r="2" fill="#080A15" stroke="#A890FF" stroke-width="1.5"/>
+  <circle cx="16" cy="17" r="2.2" fill="#FF5EAA" stroke="#FF5EAA" stroke-width="1.5"/>
+  <circle cx="16" cy="8" r="2" fill="#080A15" stroke="#4DE2D2" stroke-width="1.5"/>
+  <circle cx="28" cy="5" r="2" fill="#080A15" stroke="#A890FF" stroke-width="1.5"/>
+  <circle cx="28" cy="22" r="2" fill="#080A15" stroke="#4DE2D2" stroke-width="1.5"/>
+</svg>
