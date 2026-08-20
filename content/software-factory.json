@@ -17,7 +17,7 @@
 	"eyebrow": "Do you need a software factory?",
 	"headingHtml": "What is a software<br><em>factory?</em>",
 	"leadHtml": "Is your AI development a set of silos? Do you need to bring structure to your agentic development? And have cost-awareness along the way?",
-	"paragraph1Html": "A software factory is a mechanised way of delivering hardened software with AI. A factory takes raw inputs and produces consistent outputs. In a software factory, your raw inputs are ideas - feature requests, bug reports, and new projects. Your outputs: merge requests, completed code, testable artifacts, and reports.",
+	"paragraph1Html": "A software factory is a mechanized way of delivering hardened software with AI. A factory takes raw inputs and produces consistent outputs. In a software factory, your raw inputs are ideas - feature requests, bug reports, and new projects. Your outputs: merge requests, completed code, testable artifacts, and reports.",
 	"paragraph2Html": "A good software factory also recognizes when human input is needed, but can proceed autonomously as much as it can. It is a productivity multiplier, not a walled garden. It is a <em>foundation</em> for productive software development. Thus the name, Yesod (foundation).",
 	"linkLabel": "See Yesod in action",
 	"linkHref": "https://yesod.work/",
@@ -54,23 +54,23 @@
 	]
     },
     "process": {
-	"eyebrow": "How it works",
-	"headingHtml": "Delivering a custom software factory",
-	"body": "The most important part of a software factory is - does it work for your team? That is where MeshCrawler can help. ",
+	"eyebrow": "",
+	"headingHtml": "Cost-Aware Dispatch",
+	"body": "A key Yesod feature is complexity estimation and cost-aware dispatch. The guiding principle - dispatch to the cheapest model capable of doing the job.",
 	"ctaLabel": "Talk through your setup",
 	"ctaHref": "mailto:hello@meshcrawler.com",
 	"steps": [
 	    {
-		"title": "TODO: Assess",
-		"body": "TODO: audit current tooling, workflows, and team practices."
+		"title": "Use your coder plans when possible",
+		"body": "Plug in coder plans, and exhaust them"
 	    },
 	    {
-		"title": "TODO: Design & build",
-		"body": "TODO: stand up the factory's tooling, agents, and conventions."
+		"title": "Customizable Dispatch Policies",
+		"body": "High priority requests get prioritized, low priority can use batch mode, or excess capacity."
 	    },
 	    {
-		"title": "TODO: Hand off",
-		"body": "TODO: train the team and leave a self-sustaining practice behind."
+		"title": "Flexible inference",
+		"body": "Claude, Codex, Fireworks, OpenRouter, and more"
 	    }
 	]
     },
