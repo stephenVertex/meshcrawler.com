@@ -1,0 +1,82 @@
+{
+    "meta": {
+	"title": "Software Factory | MeshCrawler",
+	"description": "Custom deployments of Yesod.work, an Agentic, Cost-Aware Software Factory"
+    },
+    "hero": {
+	"eyebrow": "Capability / Agentic Software Factories",
+	"titleHtml": "Do you need a <em>software factory?</em> Let us help.",
+	"introHtml": "Is your company a series of one-person vibe-coding silos?",
+	"primaryCtaLabel": "Reach out",
+	"primaryCtaHref": "mailto:hello@meshcrawler.com",
+	"secondaryCtaLabel": "Learn more",
+	"noteHtml": "Combining agentic engineering and robust engineering with a cost-aware software factory",
+	"visualCaption": "File a feature request, get a ticket and an ETA, and come back to a deployed test environment — on loop."
+    },
+    "whatIsIt": {
+	"eyebrow": "Do you need a software factory?",
+	"headingHtml": "What is a software<br><em>factory?</em>",
+	"leadHtml": "Is your AI development a set of silos? Do you need to bring structure to your agentic development? And have cost-awareness along the way?",
+	"paragraph1Html": "A software factory is a mechanised way of delivering hardened software with AI. A factory takes raw inputs and produces consistent outputs. In a software factory, your raw inputs are ideas - feature requests, bug reports, and new projects. Your outputs: merge requests, completed code, testable artifacts, and reports.",
+	"paragraph2Html": "A good software factory also recognizes when human input is needed, but can proceed autonomously as much as it can. It is a productivity multiplier, not a walled garden. It is a <em>foundation</em> for productive software development. Thus the name, Yesod (foundation).",
+	"linkLabel": "See Yesod in action",
+	"linkHref": "https://yesod.work/"
+    },
+    "pillars": {
+	"eyebrow": "The pillars",
+	"headingHtml": "Our Approach",
+	"detail": "",
+	"items": [
+	    {
+		"titleHtml": "Understand your development processes",
+		"body": "Before we do, we listen. We make sure that we have a good fit in terms of workflow, AI maturity, scale, requirements."
+	    },
+	    {
+		"titleHtml": "Design and proposal",
+		"body": "How can we make a software factory that works for you? How does your team work? What processes do you want standardized? Where would you like human in the loop? How do you pay for tokens? What are your compliance requirements?"
+	    },
+	    {
+		"titleHtml": "Implementation",
+		"body": "We install the software factory according to your requirements, extensively test, and provide training to make sure it works with your team. Regular check-ins ensure maximum utilization."
+	    },
+	    {
+		"titleHtml": "Custom Integrations",
+		"body": "Is your desired output a testable iPhone app? Do you want to talk to the factory exclusively over Slack? Does this need to run air-gapped?"
+	    }
+	]
+    },
+    "process": {
+	"eyebrow": "How it works",
+	"headingHtml": "Delivering a custom software factory",
+	"body": "The most important part of a software factory is - does it work for your team? That is where MeshCrawler can help. ",
+	"ctaLabel": "Talk through your setup",
+	"ctaHref": "mailto:hello@meshcrawler.com",
+	"steps": [
+	    {
+		"title": "TODO: Assess",
+		"body": "TODO: audit current tooling, workflows, and team practices."
+	    },
+	    {
+		"title": "TODO: Design & build",
+		"body": "TODO: stand up the factory's tooling, agents, and conventions."
+	    },
+	    {
+		"title": "TODO: Hand off",
+		"body": "TODO: train the team and leave a self-sustaining practice behind."
+	    }
+	]
+    },
+    "yesod": {
+	"eyebrow": "The reference implementation",
+	"headingHtml": "Meet<br><em>Yesod.</em>",
+	"body": "TODO: a couple sentences on Yesod \u2014 the software factory Stephen runs day to day \u2014 and why it's the proof point for this offering.",
+	"linkLabel": "Visit yesod.work",
+	"linkHref": "https://yesod.work/"
+    },
+    "contact": {
+	"eyebrow": "Ready to build the engine?",
+	"headingHtml": "Let's set up<br><em>your factory.</em>",
+	"email": "hello@meshcrawler.com",
+	"emailHref": "mailto:hello@meshcrawler.com"
+    }
+}
