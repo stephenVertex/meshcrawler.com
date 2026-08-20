@@ -60,6 +60,30 @@
                     <div class="bio-intro">
                         <p class="eyebrow"><span class="eyebrow-dot"></span> <span data-bind-text="whatIsIt.eyebrow">What it is</span></p>
                         <h2 data-bind-html="whatIsIt.headingHtml">Not a project.<br><em>A practice.</em></h2>
+                        <p class="factory-line-kicker" data-bind-text="whatIsIt.pipelineKicker">From raw idea to shipped software, every time.</p>
+                        <ol class="factory-line">
+                            <li class="factory-station">
+                                <span class="factory-node"><span class="factory-icon" aria-hidden="true">✦</span></span>
+                                <span class="factory-text"><span class="factory-index">01</span><h3 data-bind-text="whatIsIt.pipeline.0.label">Idea</h3><p data-bind-text="whatIsIt.pipeline.0.detail">A feature request, bug report, or new idea comes in.</p></span>
+                            </li>
+                            <li class="factory-station">
+                                <span class="factory-node"><span class="factory-icon" aria-hidden="true">☰</span></span>
+                                <span class="factory-text"><span class="factory-index">02</span><h3 data-bind-text="whatIsIt.pipeline.1.label">Plan</h3><p data-bind-text="whatIsIt.pipeline.1.detail">Scoped into bounded units of work with clear acceptance criteria.</p></span>
+                            </li>
+                            <li class="factory-station">
+                                <span class="factory-node"><span class="factory-icon" aria-hidden="true">⚙</span></span>
+                                <span class="factory-text"><span class="factory-index">03</span><h3 data-bind-text="whatIsIt.pipeline.2.label">Build</h3><p data-bind-text="whatIsIt.pipeline.2.detail">AI agents write the code in isolated, parallel work lanes.</p></span>
+                            </li>
+                            <li class="factory-station">
+                                <span class="factory-node"><span class="factory-icon" aria-hidden="true">✓</span></span>
+                                <span class="factory-text"><span class="factory-index">04</span><h3 data-bind-text="whatIsIt.pipeline.3.label">Verify</h3><p data-bind-text="whatIsIt.pipeline.3.detail">Automated tests and deterministic gates check every change.</p></span>
+                            </li>
+                            <li class="factory-station">
+                                <span class="factory-node"><span class="factory-icon" aria-hidden="true">↗</span></span>
+                                <span class="factory-text"><span class="factory-index">05</span><h3 data-bind-text="whatIsIt.pipeline.4.label">Ship</h3><p data-bind-text="whatIsIt.pipeline.4.detail">Merged, deployed, and live — ready to use.</p></span>
+                            </li>
+                            <span class="factory-pulse" aria-hidden="true"></span>
+                        </ol>
                     </div>
                     <div class="bio-copy">
                         <p class="lead-copy" data-bind-html="whatIsIt.leadHtml">TODO: define "software factory" in MeshCrawler's own words.</p>
