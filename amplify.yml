@@ -5,7 +5,7 @@ frontend:
       commands:
         - mkdir -p build
         - cp index.html people.html software-factory.html styles.css build/
-        - cp -R branding assets content build/
+        - cp -R assets content build/
   artifacts:
     baseDirectory: build
     files:
